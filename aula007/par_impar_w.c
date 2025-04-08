@@ -12,7 +12,8 @@ int main(void) {
         printf("Digite o %d° número: ", i);
         scanf("%d", &num);
 
-        if (!(num % 2)) pares++;
+        // if (num % 2 == 0)
+        if (num & 1) pares++;
         else impares++;
     }
 

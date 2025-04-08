@@ -5,12 +5,12 @@ int main(void) {
     int soma = 0;
     long prod = 1;
 
-    printf("Digite a qtd de numeros: ");
+    printf("Digite a qtd de números: ");
     scanf("%d", &qtd);
 
     int i = 0;
     while (i++ < qtd) {
-        printf("Digite o %do numero: ", i);
+        printf("Digite o %d° número: ", i);
         scanf("%d", &num);
         soma += num;
         prod *= num;

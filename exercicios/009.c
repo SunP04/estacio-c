@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 #define QTD_NOTAS 3
+#define QTD_CONCEITOS 5
 
 char media_aprov(float notas[QTD_NOTAS], float media_exercicio) {
     float n1 = notas[0];
@@ -22,7 +23,7 @@ int main(void) {
     int qtd;
     float notas[QTD_NOTAS];
     float media;
-    char conceitos[5] = {0};
+    char conceitos[QTD_CONCEITOS] = {0};
 
     printf("Digite a quantidade de pessoas: ");
     scanf("%d", &qtd);
@@ -38,13 +39,13 @@ int main(void) {
         scanf("%f", &media);
 
         char conceito = media_aprov(notas, media);
-        conceitos[conceito % 5]++;
+        conceitos[conceito % QTD_CONCEITOS]++;
 
         printf("Conceito: %c\n", conceito);
         putchar('\n');
     }
    
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < QTD_CONCEITOS; i++) {
         char conceito = i + 'A';
         printf("Conceito %c: %d\n", conceito, conceitos[i]);
     }

@@ -9,6 +9,11 @@ int main(void) {
     printf("Digite o segundo número: ");
     scanf("%f", &n2);
 
+    if (n1 == n2) {
+        printf("Números digitados são iguais. Favor digitar digitos diferentes.\n");
+        return 0;
+    }
+
     float maior = n1 > n2 ? n1 : n2;
     printf("O maior número é %f", maior);
 

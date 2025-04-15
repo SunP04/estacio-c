@@ -1,6 +1,6 @@
 # Estacio - C
 
-Repositório que contém todos os exemplos/exercícios passados na aula de C (YDUCS - Estácio de Sá).
+Repositório que contém alguns dos exemplos/exercícios passados na aula de C (YDUCS - Estácio de Sá).
 
 ## License
 
